@@ -31,3 +31,7 @@ https://dl.google.com/android/repository/android-ndk-r15c-windows-x86_64.zip?hl=
 windows 用 mingw64_shell.bat
 android 用 mingw64_shell.bat
 xcode 不再支持 x86, 移除了 armv7 armv7s 的支持
+
+# 额外库
+sproto 17affaf https://github.com/cloudwu/sproto
+LuaSQLite3 0.9.5 http://lua.sqlite.org/index.cgi/home (not compiled, just get source inside)

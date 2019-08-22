@@ -18,6 +18,8 @@ gcc -m64 -O2 -std=gnu99 -shared \
  pb.c \
  lpeg.c \
  struct.c \
+ lsha1.c \
+ lua-crypt.c \
  cjson/strbuf.c \
  cjson/lua_cjson.c \
  cjson/fpconv.c \
@@ -34,9 +36,12 @@ gcc -m64 -O2 -std=gnu99 -shared \
  luasocket/timeout.c \
  luasocket/udp.c \
  luasocket/wsocket.c \
+ sproto/sproto.c \
+ sproto/lsproto.c \
  -o Plugins/x86_64/tolua.dll \
  -I./ \
  -Iluajit-2.1/src \
  -Iluasocket \
+ -Isproto \
  -lws2_32 \
  -Wl,--whole-archive window/x86_64/libluajit.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++
