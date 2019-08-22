@@ -23,3 +23,11 @@ https://github.com/diegonehab/luasocket<br>
 http://www.inf.puc-rio.br/~roberto/struct/<br>
 **lpeg**<br>
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html
+
+# mod
+ndk 用的 android-ndk-r15c, 用 android-ndk-r16b 会报错
+https://dl.google.com/android/repository/android-ndk-r15c-windows-x86_64.zip?hl=zh_cn
+
+windows 用 mingw64_shell.bat
+android 用 mingw64_shell.bat
+xcode 不再支持 x86, 移除了 armv7 armv7s 的支持

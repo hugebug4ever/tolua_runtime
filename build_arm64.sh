@@ -1,7 +1,9 @@
 cd luajit-2.1/src
 
 # Android/ARM, armeabi-v7a (ARMv7 VFP), Android 4.0+ (ICS)
-NDK=D:/android-ndk-r15c
+# NDK=D:/android-ndk-r15c
+NDK=d:/Programs/android-ndk-r15c
+# NDK=d:/Programs/android-ndk-r16b
 NDKABI=21
 NDKTRIPLE=aarch64-linux-android
 NDKVER=$NDK/toolchains/aarch64-linux-android-4.9
