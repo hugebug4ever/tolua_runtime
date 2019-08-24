@@ -30,3 +30,12 @@
 
 # Debug files
 *.dSYM/
+
+# extra
+.DS_Store
+iOS/tolua.xcodeproj/project.xcworkspace/
+iOS/tolua.xcodeproj/xcuserdata/
+macnojit/tolua.xcodeproj/project.xcworkspace/
+macnojit/tolua.xcodeproj/xcuserdata/
+iOS/build/
+macnojit/build/

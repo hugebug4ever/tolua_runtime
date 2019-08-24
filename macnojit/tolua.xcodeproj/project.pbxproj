@@ -62,6 +62,9 @@
 		84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B21C45678E00AE9B8F /* tolua.c */; };
 		84F8B8B51C45679700AE9B8F /* struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B41C45679700AE9B8F /* struct.c */; };
 		84F8B8B71C45679C00AE9B8F /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B61C45679C00AE9B8F /* lpeg.c */; };
+		B83BA8C8231137A4004FE6AE /* lua-crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = B83BA8C5231137A4004FE6AE /* lua-crypt.c */; };
+		B83BA8C9231137A4004FE6AE /* lsha1.c in Sources */ = {isa = PBXBuildFile; fileRef = B83BA8C6231137A4004FE6AE /* lsha1.c */; };
+		B83BA8CA231137A4004FE6AE /* sproto in Resources */ = {isa = PBXBuildFile; fileRef = B83BA8C7231137A4004FE6AE /* sproto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +169,9 @@
 		84F8B8B21C45678E00AE9B8F /* tolua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tolua.c; path = ../../tolua.c; sourceTree = "<group>"; };
 		84F8B8B41C45679700AE9B8F /* struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = struct.c; path = ../../struct.c; sourceTree = "<group>"; };
 		84F8B8B61C45679C00AE9B8F /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		B83BA8C5231137A4004FE6AE /* lua-crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "lua-crypt.c"; path = "../../lua-crypt.c"; sourceTree = "<group>"; };
+		B83BA8C6231137A4004FE6AE /* lsha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsha1.c; path = ../../lsha1.c; sourceTree = "<group>"; };
+		B83BA8C7231137A4004FE6AE /* sproto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sproto; path = ../../sproto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,9 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				B83BA8C6231137A4004FE6AE /* lsha1.c */,
+				B83BA8C5231137A4004FE6AE /* lua-crypt.c */,
+				B83BA8C7231137A4004FE6AE /* sproto */,
 				842A59A21C85B76100EA2815 /* cjson */,
 				84EF23541C4CCD3F0093A49A /* lua */,
 				84F8B8B81C4567C100AE9B8F /* luasocket */,
@@ -389,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83BA8CA231137A4004FE6AE /* sproto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +439,7 @@
 				84EF239D1C4CCD3F0093A49A /* lopcodes.c in Sources */,
 				84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */,
 				84EF239C1C4CCD3F0093A49A /* lobject.c in Sources */,
+				B83BA8C9231137A4004FE6AE /* lsha1.c in Sources */,
 				840092881CCF406200F89A56 /* luasocket.c in Sources */,
 				84EF23A11C4CCD3F0093A49A /* lstring.c in Sources */,
 				842A59AB1C85B76100EA2815 /* strbuf.c in Sources */,
@@ -436,6 +447,7 @@
 				84EF23A41C4CCD3F0093A49A /* ltablib.c in Sources */,
 				8445EB131D4C9D2100397F5E /* uint64.c in Sources */,
 				84EF239F1C4CCD3F0093A49A /* lparser.c in Sources */,
+				B83BA8C8231137A4004FE6AE /* lua-crypt.c in Sources */,
 				840092891CCF406200F89A56 /* mime.c in Sources */,
 				84EF23A91C4CCD3F0093A49A /* lvm.c in Sources */,
 				84EF23911C4CCD3F0093A49A /* ldebug.c in Sources */,
