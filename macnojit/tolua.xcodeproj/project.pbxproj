@@ -371,6 +371,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0F4B04C71800959F002EA938;
@@ -555,9 +556,13 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_MACOSX",
+					"-DLUA_USE_DLOPEN",
+				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = tolua;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -579,9 +584,13 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DLUA_USE_MACOSX",
+					"-DLUA_USE_DLOPEN",
+				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = tolua;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
