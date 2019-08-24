@@ -62,9 +62,11 @@
 		84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B21C45678E00AE9B8F /* tolua.c */; };
 		84F8B8B51C45679700AE9B8F /* struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B41C45679700AE9B8F /* struct.c */; };
 		84F8B8B71C45679C00AE9B8F /* lpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 84F8B8B61C45679C00AE9B8F /* lpeg.c */; };
+		B81BC098231143450031E971 /* lsproto.c in Sources */ = {isa = PBXBuildFile; fileRef = B81BC08A231143450031E971 /* lsproto.c */; };
+		B81BC099231143450031E971 /* sproto.c in Sources */ = {isa = PBXBuildFile; fileRef = B81BC08B231143450031E971 /* sproto.c */; };
+		B81BC0A1231143450031E971 /* xilei.c in Sources */ = {isa = PBXBuildFile; fileRef = B81BC093231143450031E971 /* xilei.c */; };
 		B83BA8C8231137A4004FE6AE /* lua-crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = B83BA8C5231137A4004FE6AE /* lua-crypt.c */; };
 		B83BA8C9231137A4004FE6AE /* lsha1.c in Sources */ = {isa = PBXBuildFile; fileRef = B83BA8C6231137A4004FE6AE /* lsha1.c */; };
-		B83BA8CA231137A4004FE6AE /* sproto in Resources */ = {isa = PBXBuildFile; fileRef = B83BA8C7231137A4004FE6AE /* sproto */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,9 +171,13 @@
 		84F8B8B21C45678E00AE9B8F /* tolua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tolua.c; path = ../../tolua.c; sourceTree = "<group>"; };
 		84F8B8B41C45679700AE9B8F /* struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = struct.c; path = ../../struct.c; sourceTree = "<group>"; };
 		84F8B8B61C45679C00AE9B8F /* lpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lpeg.c; path = ../../lpeg.c; sourceTree = "<group>"; };
+		B81BC08A231143450031E971 /* lsproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lsproto.c; sourceTree = "<group>"; };
+		B81BC08B231143450031E971 /* sproto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sproto.c; sourceTree = "<group>"; };
+		B81BC093231143450031E971 /* xilei.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xilei.c; sourceTree = "<group>"; };
+		B81BC094231143450031E971 /* msvcint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msvcint.h; sourceTree = "<group>"; };
+		B81BC095231143450031E971 /* sproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sproto.h; sourceTree = "<group>"; };
 		B83BA8C5231137A4004FE6AE /* lua-crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "lua-crypt.c"; path = "../../lua-crypt.c"; sourceTree = "<group>"; };
 		B83BA8C6231137A4004FE6AE /* lsha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lsha1.c; path = ../../lsha1.c; sourceTree = "<group>"; };
-		B83BA8C7231137A4004FE6AE /* sproto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sproto; path = ../../sproto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,9 +211,9 @@
 		0F4B04D51800959F002EA938 /* tolua */ = {
 			isa = PBXGroup;
 			children = (
+				B81BC089231143450031E971 /* sproto */,
 				B83BA8C6231137A4004FE6AE /* lsha1.c */,
 				B83BA8C5231137A4004FE6AE /* lua-crypt.c */,
-				B83BA8C7231137A4004FE6AE /* sproto */,
 				842A59A21C85B76100EA2815 /* cjson */,
 				84EF23541C4CCD3F0093A49A /* lua */,
 				84F8B8B81C4567C100AE9B8F /* luasocket */,
@@ -346,6 +352,19 @@
 			path = ../../luasocket;
 			sourceTree = "<group>";
 		};
+		B81BC089231143450031E971 /* sproto */ = {
+			isa = PBXGroup;
+			children = (
+				B81BC08A231143450031E971 /* lsproto.c */,
+				B81BC08B231143450031E971 /* sproto.c */,
+				B81BC093231143450031E971 /* xilei.c */,
+				B81BC094231143450031E971 /* msvcint.h */,
+				B81BC095231143450031E971 /* sproto.h */,
+			);
+			name = sproto;
+			path = ../../sproto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,7 +417,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83BA8CA231137A4004FE6AE /* sproto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +454,7 @@
 				84EF23951C4CCD3F0093A49A /* lgc.c in Sources */,
 				842A59AA1C85B76100EA2815 /* lua_cjson.c in Sources */,
 				84EF23A51C4CCD3F0093A49A /* ltm.c in Sources */,
+				B81BC098231143450031E971 /* lsproto.c in Sources */,
 				84EF239D1C4CCD3F0093A49A /* lopcodes.c in Sources */,
 				84F8B8B31C45678E00AE9B8F /* tolua.c in Sources */,
 				84EF239C1C4CCD3F0093A49A /* lobject.c in Sources */,
@@ -452,6 +471,7 @@
 				84EF23A91C4CCD3F0093A49A /* lvm.c in Sources */,
 				84EF23911C4CCD3F0093A49A /* ldebug.c in Sources */,
 				84EF23921C4CCD3F0093A49A /* ldo.c in Sources */,
+				B81BC0A1231143450031E971 /* xilei.c in Sources */,
 				84EF23A01C4CCD3F0093A49A /* lstate.c in Sources */,
 				8400928B1CCF406200F89A56 /* select.c in Sources */,
 				84EF239A1C4CCD3F0093A49A /* lmem.c in Sources */,
@@ -464,6 +484,7 @@
 				84EF238E1C4CCD3F0093A49A /* lbaselib.c in Sources */,
 				84EF238C1C4CCD3F0093A49A /* lapi.c in Sources */,
 				84EF23961C4CCD3F0093A49A /* linit.c in Sources */,
+				B81BC099231143450031E971 /* sproto.c in Sources */,
 				8400928E1CCF406200F89A56 /* timeout.c in Sources */,
 				84EF238D1C4CCD3F0093A49A /* lauxlib.c in Sources */,
 			);

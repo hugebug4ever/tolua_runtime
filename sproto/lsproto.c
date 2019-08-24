@@ -21,7 +21,9 @@
 ** function gets the 'nup' elements at the top as upvalues.
 ** Returns with only the table at the stack.
 */
-LUALIB_API void luaL_setfuncs (lua_State *L, const luaL_Reg *l, int nup) {
+// xilei 20190824 compile fail with mac
+// LUALIB_API void luaL_setfuncs (lua_State *L, const luaL_Reg *l, int nup) {
+static void luaL_setfuncs (lua_State *L, const luaL_Reg *l, int nup) {
 #ifdef luaL_checkversion
 	luaL_checkversion(L);
 #endif
