@@ -10,6 +10,7 @@ LOCAL_FORCE_STATIC_EXECUTABLE := true
 LOCAL_MODULE := tolua
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../luajit-2.1/src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../sproto
 
 LOCAL_CPPFLAGS := -O2
 LOCAL_CFLAGS :=  -O2 -std=gnu99
@@ -35,6 +36,10 @@ LOCAL_SRC_FILES :=	../../tolua.c \
  					../../luasocket/timeout.c \
  					../../luasocket/udp.c \
  					../../luasocket/usocket.c \
+                    ../../sproto/lsproto.c \
+                    ../../sproto/sproto.c \
+                    ../../lsha1.c \
+                    ../../lua-crypt.c \
  					
 LOCAL_WHOLE_STATIC_LIBRARIES += libluajit
 include $(BUILD_SHARED_LIBRARY)
