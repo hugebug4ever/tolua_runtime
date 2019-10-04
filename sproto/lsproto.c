@@ -769,6 +769,7 @@ ldefault(lua_State *L) {
 		{ NULL, NULL },
 	};
 	luaL_newlib(L,l);
+	luaL_register(L, "sproto.core", l);
 	pushfunction_withbuffer(L, "encode", lencode);
 	pushfunction_withbuffer(L, "pack", lpack);
 	pushfunction_withbuffer(L, "unpack", lunpack);

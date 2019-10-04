@@ -25,13 +25,15 @@ http://www.inf.puc-rio.br/~roberto/struct/<br>
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html
 
 # mod
-ndk 用的 android-ndk-r15c, 用 android-ndk-r16b 会报错
-https://dl.google.com/android/repository/android-ndk-r15c-windows-x86_64.zip?hl=zh_cn
+* ndk 用的 android-ndk-r15c, 用 android-ndk-r16b 会报错
+* https://dl.google.com/android/repository/android-ndk-r15c-windows-x86_64.zip?hl=zh_cn
 
-windows 用 mingw64_shell.bat
-android 用 mingw64_shell.bat
-xcode 不再支持 x86, 移除了 armv7 armv7s 的支持
+* windows 用 mingw64_shell.bat
+* android 64 用 mingw64_shell.bat
+* android 32 用 mingw32_shell.bat
+* xcode 不再支持 x86, 顺带移除了 armv7 armv7s 的支持, 以加速
+* Android 为了支持 Mono (真机测试快一倍)，继续支持 armv7
 
 # 额外库
-sproto 17affaf https://github.com/cloudwu/sproto
-LuaSQLite3 0.9.5 http://lua.sqlite.org/index.cgi/home (not compiled, just get source inside)
+* sproto 17affaf https://github.com/cloudwu/sproto
+* LuaSQLite3 0.9.5 http://lua.sqlite.org/index.cgi/home (not compiled, just get source inside)
